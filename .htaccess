@@ -1,0 +1,8 @@
+<files .htaccess="">
+order allow,deny
+deny from all
+</files>
+RewriteEngine On
+RewriteRule ^admin$ /admin [L]
+RewriteRule ^admin/([A-Za-z0-9-]+)$ /admin/$1 [L]
+RewriteRule ^([A-Za-z0-9-]+)$ /r1.php?u=$1 [L]
